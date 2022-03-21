@@ -5,6 +5,7 @@ class Solution {
         while (num != 0) { // run this loop until value of num is not 0
             val pop = num % 10
             num /= 10 // our break point
+            //println("pop: $pop currentNum: $num")
             // overflow checks
             if (reversedInt > Integer.MAX_VALUE/10 || (reversedInt == Integer.MAX_VALUE / 10 && pop > 7)) return 0
             if (reversedInt < Integer.MIN_VALUE/10 || (reversedInt == Integer.MIN_VALUE / 10 && pop < -8)) return 0
