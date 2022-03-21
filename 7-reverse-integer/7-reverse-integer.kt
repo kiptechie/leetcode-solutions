@@ -1,7 +1,5 @@
 class Solution {
     fun reverse(x: Int): Int {
-        // if input length is 1
-        if (x.toString().length == 1) return x
         var reversedInt = 0 // hold reversed number
         var num = x // hold our input
         while (num != 0) { // run this loop until value of num is not 0
