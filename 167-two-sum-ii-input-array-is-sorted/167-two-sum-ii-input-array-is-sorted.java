@@ -2,7 +2,7 @@ class Solution {
     public int[] twoSum(int[] numbers, int target) {
         int i1 = 0;
         int i2 = 0;        
-        for(int i = 1; i < numbers.length; i++){
+        for(int i = 1; i < numbers.length; i++) {
             int hi = i;
             int lo = 0;
             int tar = target - numbers[i];
