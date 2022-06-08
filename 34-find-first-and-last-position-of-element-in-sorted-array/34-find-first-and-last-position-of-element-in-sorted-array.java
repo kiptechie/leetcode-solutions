@@ -4,12 +4,11 @@ class Solution {
         if (nums.length == 0) {
             return res;
         }
-        int firstIndex = findStartIndex(nums, target);
-        int lastIndex = -1;
-        if (firstIndex != -1) {
-            lastIndex = findLastIndex(nums, target);
+        res[0] = findStartIndex(nums, target);
+        if (res[0] != -1) {
+            res[1] = findLastIndex(nums, target);
         }
-        return new int[]{firstIndex, lastIndex};
+        return res;
     }
     
     private int findStartIndex(int[] nums, int target) {
