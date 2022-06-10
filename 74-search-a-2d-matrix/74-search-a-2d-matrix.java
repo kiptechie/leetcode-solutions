@@ -6,7 +6,6 @@ class Solution {
         }
         // find the row to search on
         int[] row = findRowToSearchOn(matrix, target);
-        // System.out.println(Arrays.toString(row));
         // if we do not find a row to search on this means that target is not in our matrix
         if (row.length == 0) {
             return false;
