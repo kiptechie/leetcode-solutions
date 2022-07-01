@@ -1,4 +1,5 @@
 class Solution {
+    
     public int maximumUnits(int[][] boxTypes, int truckSize) {
         //sort the array in ascending order according to the second column(i.e numberOfUnitsPerBox)
         Arrays.sort(boxTypes, (a, b) -> Integer.compare(a[1], b[1]));
