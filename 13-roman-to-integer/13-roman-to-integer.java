@@ -11,10 +11,9 @@ class Solution {
         
         int res = 0;
         
-        char[] chars = s.toCharArray();
-        for (int i = 1; i < chars.length; i++) {
-            String letter = String.valueOf(chars[i]).toUpperCase();
-            String prevLetter = String.valueOf(chars[i - 1]).toUpperCase();
+        for (int i = 1; i < s.length(); i++) {
+            String letter = String.valueOf(s.charAt(i)).toUpperCase();
+            String prevLetter = String.valueOf(s.charAt(i - 1)).toUpperCase();
             if (map.containsKey(letter) && map.containsKey(prevLetter)) {
                 int val = map.get(letter);
                 int prevVal = map.get(prevLetter);
